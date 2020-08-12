@@ -11,6 +11,8 @@ This repo includes:
 - `load_db.py`: functions to get the data, clean it, and load it into the database
 - `vars.py`: global variables to be used in the above programs
 - `QUESTIONS.md`: the questions I posed, SQL queries used to answer them, and the results
+- `ERD.png`: entity relationship diagram of the database and tables
+- `college_scorecard.sql`: a sample of the database created and loaded using `run.py`
 
 ## Initial Setup (First time only)
 
