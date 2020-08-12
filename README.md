@@ -5,7 +5,7 @@ I created a database and loaded it with (some of) the 2014-15 US Department of E
 This data was sourced from [the US Department of Education](https://collegescorecard.ed.gov/data/) 
 on March 7, 2020. I used the data in the database to answer questions using SQL queries.
 
-This repo includes:
+In addition to `requirements.txt` and `.gitignore`, this repo includes:
 - `run.py`: program to run to create and load the database
 - `create_db.py`: functions to create the database and tables
 - `load_db.py`: functions to get the data, clean it, and load it into the database
@@ -13,6 +13,7 @@ This repo includes:
 - `QUESTIONS.md`: the questions I posed, SQL queries used to answer them, and the results
 - `ERD.png`: entity relationship diagram of the database and tables
 - `college_scorecard.sql`: a sample of the database created and loaded using `run.py`
+- `Data Dictionary.pdf`: data dictionary for each table (see name of table in upper left of page)
 
 ## Initial Setup (First time only)
 
