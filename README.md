@@ -1,22 +1,38 @@
 # College Scorecard Database
 #### _Final project for [SI 564](https://www.si.umich.edu/programs/courses/564) Winter 2020_
 
-I created a database using (some of) the 2014-15 US Department of Education College Scorecard data.
+I created a database and loaded it with (some of) the 2014-15 US Department of Education College Scorecard data.
 This data was sourced from [the US Department of Education](https://collegescorecard.ed.gov/data/) 
 on March 7, 2020. I used the data in the database to answer questions using SQL queries.
 
-The questions I posed for myself to answer were:
+This repo includes:
+- `run.py`: program to run to create and load the database
+- `create_db.py`: functions to create the database and tables
+- `load_db.py`: functions to get the data, clean it, and load it into the database
+- `vars.py`: global variables to be used in the above programs
+- `QUESTIONS.md`: the questions I posed, SQL queries used to answer them, and the results
 
-1. Which city has the most institutions, and how many does it have? If there is a tie, I only need to see one.
-1. What are the average earnings for each control?
-1. What is the average cost and average family income for each level?
-1. Which region has the highest average share of first generation students attending its institutions? Which has the lowest? Please include the share of first generation students as well with each.
-1. Which institution has the largest share of first generation students? Please give me the share as well as the institution’s name, city, state (abbreviated), region, control, level, mean earnings, completion rate, and mean cost. If there is a tie, I only need to see one.
-1. Which institutional control has the highest mean family income, and what is that income? How much higher is it than the next closest?
-1. Which region has the largest share of private for-profit institutions (compared to other types of controls)?
-1. Please give me the name, city, and state (full name, not abbreviated) of the top 5 institutions by mean earnings which also meet the following criteria:
-    - Over 50% first generation students
-    - Mean cost is less than $10,000
-1. Please give me the name and level of the 5 institutions with the highest mean cost.
-1. Which region has the highest mean earnings? Which state?
+## Initial Setup (First time only)
 
+1. Clone this repo to your computer by using the command line to navigate to the directory/folder 
+where you want it and entering `git clone https://github.com/mfldavidson/college_scorecard_db.git`.
+
+1. Create a virtual environment (`python3 -m venv whateveryouwanttonameit`) wherever you keep 
+your virtual environments.
+
+1. Activate the virtual environment (`source whateveryounamedthevirtualenv/bin/activate` if you are on a Mac, 
+or `source whateveryounamedthevirtualenv/Scripts/activate` if you are on a PC).
+
+1. Install all necessary libraries by navigating to the repo and then running the command 
+`pip install -r requirements.txt`.
+
+1. Ensure your environmental variables are set with `username` and `password` corresponding to the MySQL 
+Server in which you want to create the database (must have read-write access).
+
+## Running the Program
+
+1. Ensure your virtual environment is activated--if not, see step 3 above.
+
+1. Ensure you are in the `college_scorecard_db` directory in your command line.
+
+1. Enter `python run.py` in your command line.
